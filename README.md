@@ -7,7 +7,7 @@ A simple phone input component for Lightning Screen Flows. Features:
 * Returns the unformatted (numeric-only) phone number as an output variable.
 * Validates that the user entered a correct phone number before allowing them to navigate to the next screen (only if the Required attribute is set to True).
 
-![Demo](/docs/img/demo.gif)
+<img src="/docs/img/demo.gif" alt="Demo" width="300px">
 
 
 ## Setup
