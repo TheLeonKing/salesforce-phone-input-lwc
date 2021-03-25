@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+
+    <masterLabel>Phone Input</masterLabel>
+    <description>Automatically formats a phone number as the user types it, and returns the unformatted phone number</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="phoneNumber"
+                      type="String"
+                      label="Phone Number"
+                      required="true" />
+            <property name="inputLabel"
+                      type="String"
+                      label="Input Label"
+                      description="Label for the input box"
+                      required="true"
+                      role="inputOnly" />
+            <property name="inputPlaceholder"
+                      type="String"
+                      label="Input Placeholder"
+                      description="Placeholder for the input box"
+                      role="inputOnly" />
+            <property name="errorMessage"
+                      type="String"
+                      label="Validation Error Message"
+                      description="Error message shown when user does not enter a 10-digit number"
+                      default="Enter a 10-digit phone number"
+                      required="false"
+                      role="inputOnly" />
+            <property name="isRequired"
+                      type="Boolean"
+                      label="Required"
+                      description="Indicates whether the input is required"
+                      role="inputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

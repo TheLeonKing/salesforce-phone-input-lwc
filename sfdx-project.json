@@ -1,0 +1,14 @@
+{
+  "packageDirectories": [
+    {
+      "package": "phone-input",
+      "path": "force-app",
+      "versionName": "Phone Input Component V1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "51.0"
+}
